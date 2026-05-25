@@ -8,7 +8,7 @@ import { ShieldCheck, Handshake, Star } from "lucide-react";
 const SPLASH_MESSAGES = [
   "Where students trade trusted.",
   "Your campus. Your marketplace.",
-  "Buy. Sell. Connect. Safely.",
+  "Buy. Sell. work. Connect. Safely.",
   "Built for students, by students."
 ];
 
@@ -27,7 +27,7 @@ export default function UniAgoraLandingPage() {
       // After all messages, animate splash layout upward and remove it
       const endTimer = setTimeout(() => {
         setShowSplash(false);
-      }, 500); 
+      }, 500);
       return () => clearTimeout(endTimer);
     }
   }, [splashIndex]);
@@ -74,8 +74,7 @@ export default function UniAgoraLandingPage() {
           <div className="mx-auto flex h-16 max-w-7xl justify-between items-center px-4 md:px-8">
             <div className="flex items-center gap-2">
               <span className="text-2xl font-bold text-unilorin-blue tracking-tight">
-                UniAgora
-              </span>
+                Uni <span className="text-unilorin-light-blue">Agora</span>              </span>
             </div>
             <div className="flex items-center gap-4">
               <Button variant="ghost" className="text-unilorin-blue font-medium hover:bg-gray-100 hidden sm:inline-flex">
@@ -100,7 +99,7 @@ export default function UniAgoraLandingPage() {
               The Campus Marketplace You Can Actually Trust
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl font-medium">
-              Buy, sell and exchange with verified students on your campus. 
+              Buy, sell and exchange with verified students on your campus.
               No scams. No strangers. Just your community.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -149,7 +148,7 @@ export default function UniAgoraLandingPage() {
                 Handshake Transactions
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Take the generic out of exchanges. A unique code confirms every real exchange in person to prevent false claims.
+                Seller generates a 4-digit code. Buyer enters it on delivery. Only then is the transaction marked complete — so nobody can claim they sent something they didn't.
               </p>
             </motion.div>
 
@@ -177,9 +176,8 @@ export default function UniAgoraLandingPage() {
         {/* Footer */}
         <footer className="w-full bg-white border-t border-gray-200 mt-auto">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 flex flex-col md:flex-row items-center justify-between">
-            <span className="text-unilorin-blue font-bold text-lg mb-4 md:mb-0">
-              UniAgora
-            </span>
+            <span className="text-unilorin-blue font-bold text-2xl mb-4 md:mb-0">
+              Uni<span className="text-unilorin-light-blue">Agora</span>            </span>
             <p className="text-gray-500 text-sm font-medium">
               &copy; {new Date().getFullYear()} UniAgora. Built by students, for students.
             </p>

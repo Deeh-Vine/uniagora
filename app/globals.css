@@ -7,7 +7,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-unilorin-blue: var(--unilorin-blue);
-  --color-unilorin-gold: var(--unilorin-gold);
+--color-unilorin-light-blue: var(--unilorin-light-blue);
+--color-unilorin-gold: var(--unilorin-gold);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
@@ -74,7 +75,8 @@
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --unilorin-blue: #003366;
+  --unilorin-blue: #0005AA;
+  --unilorin-light-blue: #AACCFF;
   --unilorin-gold: #FFD700;
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
