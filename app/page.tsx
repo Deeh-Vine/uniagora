@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { ShieldCheck, Handshake, Star } from "lucide-react";
-
 const SPLASH_MESSAGES = [
   "Where students trade trusted.",
   "Your campus. Your marketplace.",
@@ -39,7 +39,7 @@ export default function UniAgoraLandingPage() {
         {showSplash && (
           <motion.div
             key="splash-screen"
-            className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-gray-900 to-[#001122]"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-linear-to-br from-gray-900 to-[#001122]"
             initial={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -77,12 +77,12 @@ export default function UniAgoraLandingPage() {
                 Uni <span className="text-unilorin-light-blue">Agora</span>              </span>
             </div>
             <div className="flex items-center gap-4">
-              <Button variant="ghost" className="text-unilorin-blue font-medium hover:bg-gray-100 hidden sm:inline-flex">
+              <Link href="/login"><Button variant="ghost" className="text-unilorin-blue font-medium hover:bg-gray-100 hidden sm:inline-flex">
                 Log In
-              </Button>
-              <Button className="bg-unilorin-blue text-white hover:bg-unilorin-blue/90 shadow-md">
+              </Button></Link>
+              <Link href="/signup"><Button className="bg-unilorin-blue text-white hover:bg-unilorin-blue/90 shadow-md">
                 Sign Up
-              </Button>
+              </Button></Link>
             </div>
           </div>
         </header>
@@ -103,10 +103,10 @@ export default function UniAgoraLandingPage() {
               No scams. No strangers. Just your community.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Button size="lg" className="bg-unilorin-gold text-unilorin-blue hover:bg-unilorin-gold/80 hover:scale-105 transition-transform text-lg px-8 py-6 font-bold shadow-lg rounded-xl">
+              <Link href="/signup"><Button size="lg" className="bg-unilorin-gold text-unilorin-blue hover:bg-unilorin-gold/80 hover:scale-105 transition-transform text-lg px-8 py-6 font-bold shadow-lg rounded-xl">
                 Get Started
-              </Button>
-              <Button size="lg" variant="outline" className="text-unilorin-blue border-unilorin-blue/20 hover:bg-unilorin-blue/5 text-lg px-8 py-6 font-medium rounded-xl">
+              </Button></Link>
+              <link rel="stylesheet" href="" /><Button size="lg" variant="outline" className="text-unilorin-blue border-unilorin-blue/20 hover:bg-unilorin-blue/5 text-lg px-8 py-6 font-medium rounded-xl">
                 Learn More
               </Button>
             </div>
